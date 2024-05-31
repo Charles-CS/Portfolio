@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles - The lost hospital</title>
+
+    <link rel="icon" type="image/png" href="Web-Icons/Tab-Icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="The Lost Hospital.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="Index.html" class="logo">
+           TLH
+        </a>
+
+        <ul class="navmenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-page">About</a></li>
+            <li><a href="#about-page">News</a></li>
+            <li><a href="#contact">Support</a></li>
+
+        </ul>
+
+        <div class="nav-right">
+            <a href="#" class="nav-btn">Download</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+    </header>
+    
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <span>Unreal Engine</span>
+            <h5>Horror Game</h5>
+            <h1>The Lost Hospital</h1>
+            <p>The lost hospital is a short first person horror experience made with unreal engine 5</p>
+       
+            <div class="hero-btn">
+             <a href="#">Read more<i class="ri-send-plane-2-fill"></i></a>
+             <a href="#" class="btn-2">Trailer<i class="ri-film-line"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img src="Blog-images/Overlay-img.png" alt="">
+        </div>
+    </section>
+
+
+    <div class="images-box">
+        <div class="box">
+            <div class="box-img">
+                <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoNS4xMiw1LjEyKSI+PHBhdGggZD0iTTI1LDJjLTEyLjY5MTQxLDAgLTIzLDEwLjMwODU5IC0yMywyM2MwLDEyLjY5MTQxIDEwLjMwODU5LDIzIDIzLDIzYzEyLjY5MTQxLDAgMjMsLTEwLjMwODU5IDIzLC0yM2MwLC0xMi42OTE0MSAtMTAuMzA4NTksLTIzIC0yMywtMjN6TTI1LDRjMTEuNjA5MzgsMCAyMSw5LjM5MDYzIDIxLDIxYzAsMTEuNjA5MzggLTkuMzkwNjIsMjEgLTIxLDIxYy0xMS42MDkzNywwIC0yMSwtOS4zOTA2MiAtMjEsLTIxYzAsLTExLjYwOTM3IDkuMzkwNjMsLTIxIDIxLC0yMXpNMjMuNjIxMDksMTAuNWMtNy44NDc2NiwxLjg2NzE5IC0xNi45NjQ4NCwxMS40MDYyNSAtMTYuMDc4MTIsMTguNjI1YzQuMjY5NTMsLTcuNTMxMjUgNy4xNjAxNiwtOC41NTQ2OSA3Ljk0NTMxLC04LjU1NDY5YzAuNzg5MDYsMCAxLjIxNDg0LDAuNDI1NzggMS4yMTQ4NCwxLjMzNTk0djExLjIyMjY2YzAsMS4zOTQ1MyAtMS4zNDc2NiwxLjIyNjU2IC0yLjI0MjE5LDEuMDg5ODRjMy4zMTI1LDQuOTQxNDEgMTEuMDM5MDYsNS4yODEyNSAxMS4wMzkwNiw1LjI4MTI1bDMuNDYwOTQsLTMuNzYxNzJsMy4zMzU5NCwyLjg1MTU2YzUuMDgyMDMsLTMuMjg5MDYgOC40Mzc1LC04Ljg2MzI4IDguNDM3NSwtOS43MDcwM2MtMi41MTU2MiwyLjc3MzQ0IC00LjY3NTc4LDMuMjc3MzQgLTUuMTYwMTYsMy4yNzczNGMtMC40ODQzNywwIC0xLjI3MzQ0LC0wLjA1ODU5IC0xLjI3MzQ0LC0wLjcyNjU2di0xMy4zMTI1YzAsLTEuMTU2MjUgMy4xNzk2OSwtNC45NDkyMiA0LjE4MzU5LC02LjIyNjU2Yy02LjYxMzI4LDEuNzM0MzggLTkuMTYwMTYsNS4wMzkwNiAtOS4xNjAxNiw1LjAzOTA2YzAsMCAtMC44OTA2MiwtMC42Njc5NyAtMi44NTE1NiwtMC42Njc5N2MwLjczNDM4LDAuNjI1IDEuNzYxNzIsMS43NTc4MSAxLjc2MTcyLDMuMDkzNzV2MTIuMTkxNDFjMCwwIC0yLjE4NzUsMS41NzgxMyAtMy40NjA5NCwxLjU3ODEzYy0xLjI3MzQ0LDAgLTIuMTgzNTksLTAuNTQyOTcgLTIuMTgzNTksLTEuNTE1NjJ2LTE0LjU2MjVjMCwwIC0xLjgyMDMxLDEuMjc3MzQgLTEuODIwMzEsLTIuNDg4MjhjMCwtMS44Nzg5MSAyLjg1MTU2LC00LjA2MjUgMi44NTE1NiwtNC4wNjI1eiI+PC9wYXRoPjwvZz48L2c+Cjwvc3ZnPg=="/>
+            </div>
+
+            <div class="box-text">
+                <h5>Unreal Engine</h5>
+                <a href="https://www.unrealengine.com/en-US" target="_blank">5.3.0
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <!--  -->
+
+        <div class="box">
+            <div class="box-img">
+            <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoNS4xMiw1LjEyKSI+PHBhdGggZD0iTTEwLDNjLTMuMzAxNjMsMCAtNiwyLjY5ODM3IC02LDZ2MzIuMjQ0MTRsMjEsNi4zMDA3OGwyMSwtNi4zMDA3OHYtMC43NDQxNHYtMzEuNWMwLC0zLjMwMTYzIC0yLjY5ODM3LC02IC02LC02ek0xMCw1aDMwYzIuMjIwMzcsMCA0LDEuNzc5NjMgNCw0djMwLjc1NTg2bC0xOSw1LjY5OTIybC0xOSwtNS42OTkyMnYtMzAuNzU1ODZjMCwtMi4yMjAzNyAxLjc3OTYzLC00IDQsLTR6TTExLDhjLTEuNjU3LDAgLTMsMS4zNDMgLTMsM3YxN2MwLDEuNjU3IDEuMzQzLDMgMywzaDR2LTNoLTR2LTdoM3YtM2gtM3YtN2g0di0zek0xNyw4djIzaDN2LTEwaDNjMS42NTcsMCAzLC0xLjM0MyAzLC0zdi03YzAsLTEuNjU3IC0xLjM0MywtMyAtMywtM3pNMjgsOHYyM2gzdi0yM3pNMzYsOGMtMS42NTcsMCAtMywxLjM0MyAtMywzdjE3YzAsMS42NTcgMS4zNDMsMyAzLDNoM2MxLjY1NywwIDMsLTEuMzQzIDMsLTN2LTRoLTN2NGgtM3YtMTdoM3Y0aDN2LTRjMCwtMS42NTcgLTEuMzQzLC0zIC0zLC0zek0yMCwxMWgzdjdoLTN6TTksMzNjLTAuNTUyLDAgLTEsMC40NDggLTEsMXY0YzAsMC41NTIgMC40NDgsMSAxLDFoNGMwLjU1MiwwIDEsLTAuNDQ4IDEsLTF2LTJoLTJ2MWgxdjAuNzVjMCwwLjEzOCAtMC4xMTIsMC4yNSAtMC4yNSwwLjI1aC0zLjVjLTAuMTM4LDAgLTAuMjUsLTAuMTEyIC0wLjI1LC0wLjI1di0zLjVjMCwtMC4xMzggMC4xMTIsLTAuMjUgMC4yNSwtMC4yNWgzLjVjMC4xMzgsMCAwLjI1LDAuMTEyIDAuMjUsMC4yNXYwLjc1aDF2LTFjMCwtMC41NTIgLTAuNDQ4LC0xIC0xLC0xek0xOCwzM2wtMyw2aDFsMC41LC0xaDRsMC41LDFoMWwtMywtNnpNMjMsMzN2Nmgxdi00bDEuNSwzaDFsMS41LC0zdjRoMXYtNmgtMWwtMiw0bC0yLC00ek0zMCwzM3YxdjR2MWgxaDR2LTFoLTR2LTEuNWgydi0xaC0ydi0xLjVoNHYtMWgtNHpNMzcsMzNjLTAuNTUyLDAgLTEsMC40NDggLTEsMXYxLjVjMCwwLjU1MiAwLjQ0OCwxIDEsMWgzLjc1YzAuMTM4LDAgMC4yNSwwLjExMiAwLjI1LDAuMjV2MWMwLDAuMTM4IC0wLjExMiwwLjI1IC0wLjI1LDAuMjVoLTMuNWMtMC4xMzgsMCAtMC4yNSwtMC4xMTIgLTAuMjUsLTAuMjV2LTAuMjVoLTF2MC41YzAsMC41NTIgMC40NDgsMSAxLDFoNGMwLjU1MiwwIDEsLTAuNDQ4IDEsLTF2LTEuNWMwLC0wLjU1MiAtMC40NDgsLTEgLTEsLTFoLTMuNzVjLTAuMTM4LDAgLTAuMjUsLTAuMTEyIC0wLjI1LC0wLjI1di0xYzAsLTAuMTM4IDAuMTEyLC0wLjI1IDAuMjUsLTAuMjVoMy41YzAuMTM4LDAgMC4yNSwwLjExMiAwLjI1LDAuMjV2MC4yNWgxdi0wLjVjMCwtMC41NTIgLTAuNDQ4LC0xIC0xLC0xek0xOC41LDM0bDEuNSwzaC0zeiI+PC9wYXRoPjwvZz48L2c+Cjwvc3ZnPg=="/>
+            </div>
+
+            <div class="box-text">
+                <h5>Epic Games </h5>
+                <a href="https://www.epicgames.com/site/en-US/home" target="_blank">5.2
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="social-icons">
+        <a href="#"> <i class="ri-windows-fill"></i></a>
+        <a href="#"> <i class="ri-playstation-line"></i></a>
+        <a href="#"> <i class="ri-xbox-fill"></i></a>
+    </div>
+
+
+    <div class="scroll-btn">
+        <a href="#about-page">
+            <i class="ri-mouse-line"></i>
+        Scroll Down
+        </a>
+    </div>
+
+
+<!-------------------------------END OF LADING PAGE------------------------------------>
+
+<div style="padding: 140px 0 0 0;" class="devs" id="about-page">
+    <h1>What's new?</h1>
+</div>
+
+<!-- --------------------LATEST NEWS-------------------------- -->
+
+<section class="blog">
+    <div class="blog-container">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Blog-images/giphy.gif">
+            </div>
+            <div class="blog-text">
+                <span>Published on January 1, 2024</span>
+                <a href="#" class="blog-title">What is Unreal Engine 5? / Overview</a>
+            </div>
+        </div>
+
+        <!----------------->
+
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Blog-images/giphy3.gif">
+            </div>
+            <div class="blog-text">
+                <span>Published on January 14, 2024</span>
+                <a href="#" class="blog-title">Environment design /Level modeling </a>
+            </div>
+        </div>
+
+        <!----------------->
+        
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Blog-images/giphy2.gif">
+            </div>
+            
+            <div class="blog-text">
+                <span>Published on February 10, 2024</span>
+                <a href="#" class="blog-title">What is unreal engine Blueprints?</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- --------------------END OF LATES NEWS--------------------- -->
+
+
+<div style="padding: 70px 0 130px 0;" class="devs" id="about-page">
+    <h1>About</h1>
+</div>
+
+
+ <!-------------------------------========== STORY SECTION ==========------------------------------------> 
+
+<div class="body">
+    <div style="padding-top: 0;" class="row">
+        <div class="contentWrapper">
+            <div class="content">
+                <span class="textWrapper">
+                    <span></span>Main Information
+                </span>
+                <h2>Game Story</h2>
+                <p>The Lost Hospital is a short horror experience that revolves
+                    around the story of a man named Josiah, He is the only child
+                    of Welhern who died due to the serious explosion of their house.
+                    Josiah was also in the house that exploded, but he was the only
+                    one who was rushed to the hospital.
+                    
+                    <br>
+                    <br>
+
+                    His objective is to find out what caused their house to explode
+                    Will he succeed in his quest to prove his family that he has found
+                    the impossible-justice, or will he meet his demise at the
+                    hands of the demons that lie in wait?
+                    Only time will tell as Josiah's on a treacherous journey
+                    fraught with danger and uncertainty.
+
+                    <hr>
+
+                    <br>
+                    NOTE: This is just a demo so expect some bugs, glitches,<br>and optimization issues. Thanks!
+                </p>
+
+            </div>    
+          </div>
+
+ <!-------------------------------========== DEVELOPER SECTION ==========------------------------------------> 
+
+          <div class="content">
+           
+            <span class="textWrapper">
+                Game Information
+            </span>
+           
+
+            <div class="boxInfo">
+             <div class="txtF1">
+                <div class="txtF2">
+                    <h2>Developer(s) </h2>
+                    <h2>Writter(s)</h2>
+                    <h2>Engine(s)</h2>
+                    <h2>Genra(s)</h2>
+                    <h2>Mode(s)</h2>
+                    <br>
+                    <hr>
+                    <h2>Platforms(s)</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Specs Required:</h2>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>CPU</td>
+                            <td>Ryzen 3</td>
+                        </tr>
+                        <tr>
+                            <td>RAM</td>
+                            <td>8 GB</td>
+                        </tr>
+                        <tr>
+                            <td>GPU</td>
+                            <td>RX 570</td>
+                        </tr>
+                        <tr>
+                            <td>MEMORY</td>
+                            <td>4GB</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="txtF1">
+                <div class="lastInfo">
+                    <h2>Charles Platon</h2>
+                    <h2>Allysa Nicole J.</h2>
+                    <h2>Unreal Engine 5.3</h2>
+                    <h2>Survival Horror</h2>
+                    <h2>Single Player</h2>
+                    <br>
+                    <h2>Microsoft Windows</h2>
+                    <h2>PlayStation 4</h2>
+                    <h2>X-box</h2>
+                    <h2>Mac OS</h2>
+                </div>
+            </div>
+         </div>
+           
+        </div>    
+    </div>
+</div>
+
+<!-------------------------------INFO SECTION NUMBER 1------------------------------------>
+
+<div class="body"  id="about">
+    <div class="row">
+        <div style="border-right: 1px solid #fff;" class="imgWrapper">
+            <img src="Projects/The-Lost-Hospital-1.png" alt="">
+        </div>
+        <div class="contentWrapper">
+            <div class="content">
+                <span class="textWrapper">
+                    <span></span>01
+                </span>
+                <h2>Main Menu</h2>
+                <p>It is the landing page of the game, It includes game options, start game, exit game and also credits to developers.
+                    <br>
+                    <br>
+                     The lost hospital enables the user to change graphics from low to cinematics.</p>
+                <a href="">View more <i class="ri-stack-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-------------------------------INFO SECTION NUMBER 2------------------------------------>
+
+<div class="body">
+    <div style="padding-top: 0;" class="row">
+        <div class="contentWrapper">
+            <div class="content">
+                <span class="textWrapper">
+                    <span></span>02
+                </span>
+                <h2>Introduction</h2>
+                <p>This note is the most important to open at the beginning because it will serve as the reason for you to know what really happened, why you woke up in the abandoned hospital.</p>
+            </div>    
+          </div>
+         <div style="border-left: 1px solid #fff;" class="imgWrapper">
+            <img src="Projects/The-Lost-Hospital-2.png" alt="">
+        </div>
+    </div>
+</div>
+
+            <!------------------------------INFO SECTION NUMBER 2------------------------------------->
+
+<div style="padding: 50px 0 135px 0;" class="devs">
+    <h1>Game Perspective</h1>
+</div>
+
+            <!-------------------------------INFO SECTION NUMBER 3------------------------------------>
+
+<div class="body">
+    <div style="padding-top: 0;" class="row">
+        <div style="border-right: 1px solid #fff;" class="imgWrapper">
+            <img src="Projects/The-Lost-Hospital-7.png" alt="">
+        </div>
+        <div class="contentWrapper">
+            <div class="content">
+                <span class="textWrapper">
+                    <span></span>03
+                </span>
+                <h2>Environment</h2>
+                <p>The lost hospital environment is equipped with high graphics 3d models and assets, It is build with quixel bridge, sketchfab and blender.</p>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-------------------------------INFO SECTION NUMBER 4------------------------------------>
+
+<div class="body">
+    <div style="padding: 0 0 350px 0" class="row">
+        <div class="contentWrapper">
+            <div class="content">
+                <span class="textWrapper">
+                    <span></span>04
+                </span>
+                <h2>Interactable Objects</h2>
+                <p>Interactable objects are build with unreal engine 5 blueprints, It has mechanic that allows user to interact with objects and also while reading some notes.
+                <br>
+                <br>
+                Simply hold down the <b style="color: red;">[F]</b> key while Interacting with obeject
+                <br>
+                Then release the <b style="color: red;">[F]</b> key when you have finished.
+                <br>
+                <br>
+                You can use this mechanic to simulate the experience that <b style="color: red;">"You"</b> are in that scene experiencing those scenario.
+            
+            </p>
+               
+            </div>    
+          </div>
+         <div style="border-left: 1px solid #fff;" class="imgWrapper">
+            <img src="Projects/The-Lost-Hospital-5.png" alt="">
+        </div>
+    </div>
+</div>
+
+            <!-------------------------------INFO SECTION NUMBER 4------------------------------------>
+
+
+<!-------------------------------========== END OF INFORMATION SECTION==========------------------------------------>
+
+
+<!----------------==========FOOTER==========------------------>
+
+<footer class="footer-distributed" id="contact">
+
+    <div class="footer-left">
+        <h3>The Lost<span> Hospital</span></h3>
+
+        <p class="footer-links">
+            <a href="#home"> TLH </a>
+            |
+            <a href="#home"> Home </a>
+            |
+            <a href="#about-page">About</a>
+        </p>
+
+        <p class="footer-company-name">Copyright © 2024 <strong>CharlesDevs</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="uil uil-map-marker"></i>
+            <p><span>Charlessyy</span>
+                Rexxy</p>
+        </div>
+
+        <div>
+            <i class="uil uil-phone-alt"></i>
+            <p>+91 74**9**258</p>
+        </div>
+        <div>
+            <i class="uil uil-envelope"></i>
+            <p><a href="mailto:charlesplaton263@gmail.com">CharlesPlaton@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About developer</span>
+            <strong>Charles</strong> A 19-year old BS computer science student based in Cabuyao, Laguna Philippines.
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="uil uil-instagram"></i></a>
+            <a href="#"><i class="uil uil-facebook-f"></i></a>
+            <a href="#"><i class="uil uil-twitter-alt"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!----------------==========FOOTER==========------------------>
+
+
+
+<!-------------------------------========== JAVASCRIPT SECTION==========------------------------------------>
+
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navmenu = document.querySelector('.navmenu');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navmenu.classList.toggle('open')
+        }
+    </script>
+
+<!-------------------------------========== JAVASCRIPT SECTION==========------------------------------------>
+
+
+
+</body>
+</html>

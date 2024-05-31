@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles - CS student</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- SWIPER LINKS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!-- ICONS LINKS AT CSS -->
+    <link rel="icon" type="image/png" href="Blog-images/Tab-Icon.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
+
+</head>
+    <body>
+        <!-- Para sa loading Screen -->
+        <div class="loader"></div>
+        <!-- End of loading Screen -->
+        <!--====================== HEADER SECTION ======================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Charles</a>
+
+                <!--------------=====Mga Option=====----------------->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                       
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i>Projects
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <!--------------=====End ng Mga Option=====----------------->
+                <div class="nav__btns">
+                    <!-- DARK MODE TOGGLE SUN AT MOON -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--====================== END OF HEADER SECTION ======================-->
+
+        
+<!--================================================= MAIN CONTENT ====================================================-->
+
+
+        <!--====================== HOME SECTION ======================-->
+        <main class="main">
+            <!--========== HOME ==========-->
+            <section class="home section" id="home">
+                <div class="home__container container grid" id="Js-anim">
+                    <div class="home__content grid">
+
+                        <div class="home__social">
+                            <!--------------=====Tatlong Social Icon sa left=====----------------->
+                            <a href="#skills" class="home__social-icon">
+                                <i class="uil uil-layer-group"></i>
+                                <!-- <i class="uil uil-discord"></i> -->
+                            </a>
+
+                            <a href="#education-alt" class="home__social-icon">
+                                <i class="uil uil-graduation-cap"></i>                         
+                            </a>
+                 
+                            <a href="https://github.com/Charles-CS" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <!--------------=====End of Tatlong Social Icon sa left=====----------------->
+                        </div>
+
+                        <!--------------=====Main text=====----------------->
+                        <div class="home__img">
+                            <img src="Pictures/Web-pic.png">
+                            <p style="font-size: 0.75rem;">I solve <b>problems</b> i don't even want and still doing it.</p>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'am Charles</h1>
+                            <h3 class="home__subtitle">Self-taught developer</h3>
+                            <p class="home__description">A 19-year old BS computer science student based in Cabuyao, Laguna Philippines.</p>
+                            <a href="Subpage.html" class="button button--flex button--small portfolio__button">
+                               CCS Projects <i class="uil uil-message button__icon"></i>
+                            </a>
+                        <!--------------=====End ofMain text=====----------------->
+                        </div>
+                    </div>
+                    <!--------------=====Scroll Down Icons=====----------------->
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                    <!--------------=====End ofScroll Down Icons=====----------------->
+                </div>
+            </section>
+        <!--====================== END OF HOME SECTION ======================-->
+
+
+        <!--======================== START OF ABOUT =========================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About me</h2>
+                <span class="section__subtitle">My introduction</span>
+
+                 <!--------------=====Image and information=====----------------->
+                <div class="about__container container grid">
+                    <img src="Blog-images/Me-GIF.gif" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">
+                            I'm the developer of <a href="The Lost Hospital.html"><b>The Lost Hospital</b></a>
+                            <br>
+                            <br>
+                            I work on projects including websites, 3D third person & first person games, web and graphic design, unreal engine basic tutorial blogs, and code tutorials.
+                            <br>
+                            <br>
+                            When I'm not writing code, I enjoy reading and learning about technologies, I share the things I've learned through short videos on my blog. 
+                            <a href="#blog-section"> View More</a>
+                        </p>
+                 <!--------------=====End of Image and information=====----------------->
+
+                 <!--------------=====Start ng footer information=====----------------->
+                            <div class="about__info">
+                                <div>
+                                    <span class="about__info-title">02+</span>
+                                    <span class="about__info-name">Years <br> Experience</span>
+                                </div>
+
+                                <div>
+                                    <span class="about__info-title">06+</span>
+                                    <span class="about__info-name">Completed <br> Projects</span>
+                                </div>
+
+                               <div>
+                                <span class="about__info-title">09+</span>
+                                <span class="about__info-name">School <br> Certifications</span>
+                               </div>
+                            </div>
+
+                            <div class="about__buttons">
+                                <a download ="" href="Pictures/Resume.png" class="button button--flex">
+                                    My resume<i class="uil uil-download-alt button__icon"></i>
+                                </a>
+                            </div>
+                <!--------------=====End ng footer information=====----------------->          
+                    </div>
+                </div>
+
+            </section>
+            <!--======================= END OF ABOUT ========================-->
+
+
+            <!--====================== START OF SKILLS ======================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Technology Stacks</h2>
+                <span class="section__subtitle">Technologies and tools that I used.</span>
+
+                <!--------------=====MGA TOOLTIP=====----------------->  
+                <div class="imgs">
+                    <div class="tooltip">
+                   <a href="https://www.w3schools.com/html/default.asp" target="_blank"> <img src="Programming-Icons/1.png" alt=""></a>
+                    <span class="tooltiptext">HTML</span>
+                    </div>
+                    
+                    <div class="tooltip">
+                     <a href="https://www.w3schools.com/css/default.asp" target="_blank"> <img src="Programming-Icons/2.png" alt=""></a>
+                        <span class="tooltiptext">CSS</span>
+                    </div>
+
+                    <div class="tooltip">
+                       <a href="https://www.w3schools.com/java/default.asp" target="_blank"> <img src="Programming-Icons/3.png" alt=""></a>
+                        <span class="tooltiptext">Java</span>
+                    </div>
+
+                    <div class="tooltip">
+                        <a href="https://www.figma.com/" target="_blank"><img src="Programming-Icons/4.png" alt=""></a>
+                        <span class="tooltiptext">Figma</span>
+                    </div>
+
+                    <div class="tooltip">
+                        <a href="https://www.canva.com/" target="_blank"><img src="Programming-Icons/5.png" alt=""></a>
+                        <span class="tooltiptext">Canva</span>
+                    </div>
+                 <!--------------=====END NG MGA TOOLTIP=====----------------->             
+                </div>
+
+                <!-- -------------------------------------------------------------------- -->
+                
+                <div style="margin-top: 20px;" class="imgs">
+                 <!--------------=====MGA TOOLTIP ICON=====-----------------> 
+                    <div class="tooltip">
+                       <a href="https://quixel.com/bridge" target="_blank"> <img style="border-radius: 5px;" src="Programming-Icons/6.png" alt=""></a>
+                        <span class="tooltiptext">Quixel Bridge</span>
+                    </div>
+
+                    <div class="tooltip">
+                       <a href="https://www.unrealengine.com/en-US/unreal-engine-5" target="_blank"> <img style="border-radius: 5px;" src="Programming-Icons/7.png" alt=""></a>
+                        <span class="tooltiptext">Unreal Engine</span>
+                    </div>
+
+                    <div class="tooltip">
+                       <a href="https://www.mixamo.com/" target="_blank"> <img src="Programming-Icons/8.png" alt=""></a>
+                        <span class="tooltiptext">Mixamo</span>
+                    </div>
+
+                    <div class="tooltip">
+                      <a href="https://sketchfab.com/feed" target="_blank"><img src="Programming-Icons/9.png" alt=""></a>
+                        <pan class="tooltiptext">Sketchfab</span>
+                    </div>
+                    
+                    <div class="tooltip">
+                       <a href="https://freesound.org/" target="_blank"> <img style="border-radius: 5px;" src="Programming-Icons/10.png" alt=""></a>
+                        <span class="tooltiptext">Freesound.org</span>
+                    </div>
+                   
+                </div>
+
+                <div style="margin-top: 20px;" class="imgs">
+
+                    <div class="tooltip">
+                       <a href="https://github.com/" target="_blank"> <img style="border-radius: 5px;" src="Programming-Icons/11.png" alt=""></a>
+                        <span class="tooltiptext">Github</span>
+                    </div>
+
+                    <div class="tooltip">
+                        <a href="https://git-scm.com/" target="_blank"><img src="Programming-Icons/12.png" alt=""></a>
+                        <span class="tooltiptext">Git</span>
+                    </div>
+
+                    <div class="tooltip">
+                       <a href="https://code.visualstudio.com/" target="_blank"> <img src="Programming-Icons/13.png" alt=""></a>
+                        <span class="tooltiptext">VSCode</span>
+                    </div>
+                
+                </div>
+                 <!--------------=====END NG MGA TOOLTIP ICON=====----------------->
+            </section>
+            <!--========================== END OF SKILLS ===========================-->
+
+
+            <!--====================== STARTOF  QUALIFICATION ======================-->
+            <section class="qualification section" id="education-alt">
+                <h2 class="section__title">
+                 <!-- MOVING TEXT -->
+                    <div class="text2">
+                        <span class="auto-type"></span> 
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <script>
+                        var typed = new Typed(".auto-type", {
+                            strings: ["Experience","Education",],
+                            typeSpeed: 150,
+                            backSpeed: 150,
+                            loop: true
+                        })
+                    </script>
+                <!-- END OF MOVING TEXT -->
+                </h2>
+                
+                <span class="section__subtitle">My Personal Journey</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                               Education
+                        </div>
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                               Experience
+                        </div>
+                    </div>
+
+                     <!--====================== START OF QUALIFICATION CONTENT OF NG EDUC ======================-->
+                    <div class="qualification__sections">
+                         <!--========= QUALIFICATION CONTENT 1 =========-->
+                         <div class="qualification__content qualification__active" data-content id="education">
+                          <!--========= QUALIFICATION 1 =========-->
+                         <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">College</h3>
+                                <span class="qualification__subtitle">I'm a first year college student studying in <a href="https://www.facebook.com/pncofficial">Pamantasan ng Cabuyao</a> taking bachelor of science in computer science.</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2023-2024
+                                 </div>
+                              </div>
+
+                              <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                              </div>
+                            </div>
+                             <!--========= QUALIFICATION 2 =========-->
+                         <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Senior High School <br> STEM</h3>
+                                <span class="qualification__subtitle">I graduated in <a href="https://www.facebook.com/sammshs1999">Saint Matthew Montessori</a> and Science High School</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020-2022
+                                 </div>
+                              </div>
+                            </div>
+
+                             <!--========= QUALIFICATION 3 =========-->
+                         <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">High School</h3>
+                                <span class="qualification__subtitle">I graduated from grade 7 - 10 in <a href="https://www.facebook.com/sammshs1999">Saint Matthew Montessori</a> and Science High School</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2020
+                                 </div>
+                              </div>
+
+                              <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                              </div>
+                            </div>
+
+                             <!--========= QUALIFICATION 4 =========-->
+                         <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Elementary</h3>
+                                <span class="qualification__subtitle">I finished elementary from grade 1 - 6 in <a href="https://www.facebook.com/sammshs1999">Saint Matthew Montessori</a> and Science High School</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2011 - 2017
+                                 </div>
+                              </div>
+                            </div>
+
+                        </div>     
+
+                        <!--========= QUALIFICATION/EDUCATION CONTENT 2 =========-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--========= QUALIFICATION 1 =========-->
+                           <div class="qualification__data">
+                              <div>
+                                  <h3 class="qualification__title">Unreal Engine 5</h3>
+                                  <span class="qualification__subtitle">I develop my first person 3D horror game with unreal engine</span>
+                                  <h3 class="qualification__title">Activities</h3>
+                                  <span class="qualification__subtitle">                              
+                                        <li>Environment/Level designs</li>
+                                        <li>Backend development with UE5 - Blueprints</li>
+                                        <li>3D Animations</li>
+                                        <li>Volumentric Lightings</li>
+                                        <li>Dynamic Sound Effects</li>
+                                  </span>
+
+                                  <h3 class="qualification__title">Technologies</h3>
+                                  <span class="qualification__subtitle">                               
+                                    <li> 
+                                        <i class="uil uil-window"></i>
+                                        <a style="color: rgb(138, 138, 138);" target="_blank" href="https://www.unrealengine.com/en-US">Unreal Engine 5</a>
+                                    </li>
+
+                                    <li>
+                                        <i class="uil uil-code-branch"></i>
+                                        <a style="color: rgb(36, 36, 232);" target="_blank" href="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Blueprints/">Backend development with UE5 - Blueprints</a>
+                                    </li>
+
+                                    <li>
+                                        <i class="uil uil-channel"></i>
+                                        <a style="color: rgb(208, 208, 69);" target="_blank" href="https://www.mixamo.com/">3D Animations</a>
+                                    </li>
+
+                                    <li>
+                                        <i class="uil uil-headphones-alt"></i>
+                                         <a style="color: red;" target="_blank" href="https://freesound.org/">Freesound.org</a>
+                                    </li>
+                                 </span>
+
+                                  <div class="qualification__calendar">
+                                      <i class="uil uil-calendar-alt"></i>
+                                      2023-2024
+                                   </div>
+                                </div>
+  
+                                <div>
+                                  <span class="qualification__rounder"></span>
+                                  <span class="qualification__line"></span>
+                                </div>
+                              </div>
+  
+                        <!--============================ QUALIFICATION 2 ============================-->
+
+                           <div class="qualification__data">
+                              <div></div>
+                              <div>
+                                  <span class="qualification__rounder"></span>
+                                  <span class="qualification__line"></span>
+                              </div>
+  
+                              <div>
+                                  <h3 class="qualification__title">Frontend Development</h3>
+                                  <span class="qualification__subtitle">I got this skills when I was grade 11, I've learned about the fundamentals of frontend development and start making websites. 
+                                  </span>
+                                  <h3 class="qualification__title">Activities</h3>
+                                  <span class="qualification__subtitle">                              
+                                    <li>User interface with HTML and CSS</li>
+                                    <li>Domain hosting</li>
+                                  </span>
+
+                                  <h3 class="qualification__title">Technologies</h3>
+                                  <span class="qualification__subtitle">                               
+                                    <li> 
+                                        <i class="uil uil-html5"></i>
+                                        <a style="color: #F06032" target="_blank" href="https://www.w3schools.com/html/default.asp">HTML</a>
+                                    </li>
+
+                                    <li>
+                                        <i class="uil uil-css3-simple"></i>
+                                        <a style="color: #154cff;" target="_blank" href="https://www.w3schools.com/css/default.asp">CSS</a>
+                                    </li>
+
+                                    <li>
+                                        <i class="uil uil-pen"></i>
+                                         <a style="color: #ae23e5;" target="_blank" href="canva.com">Canva</a>
+                                    </li>
+
+                                    <li>
+                                        <i class="uil uil-pen"></i>
+                                         <a style="color: rgb(208, 208, 69);" target="_blank" href="https://www.visme.co/form-builder/?vc=VismeBlog-MadewithVisme">Visme.co/forms</a>
+                                    </li>
+
+                                    <li>
+                                        <i class="uil uil-github"></i>
+                                        <a style="color: #8f8f8f;" href="https://github.com/" target="_blank">Github</a>
+                                    </li>
+
+
+
+                                   
+                                  <div style="margin-top: 20px;" class="qualification__calendar">
+                                      <i class="uil uil-calendar-alt"></i>
+                                      2022-2023
+                                   </div>
+
+                                </div>
+                              </div>
+
+                           <!--============================ QUALIFICATION 2 ============================-->
+
+                           <div class="qualification__data">
+                              <div>
+                                  <h3 class="qualification__title">Backend Development</h3>
+                                  <span class="qualification__subtitle">I have knowledge about the fundamentals of backend, I develop basic applications with Java</span>
+                                
+                                  <h3 class="qualification__title">Activities</h3>
+                                  <span class="qualification__subtitle">                              
+                                    <li>User interface design with JavaSwing</li>
+                                    <li>Basic backend logics</li>
+                                  </span>
+                                 
+                                  <h3 class="qualification__title">Technologies</h3>
+                                  <span class="qualification__subtitle">   
+
+                                    <li> 
+                                        <i class="uil uil-code-branch"></i>
+                                        <a style="color: #F06032;" target="_blank" href="https://www.w3schools.com/java/default.asp">Java</a>
+                                    </li>
+                                    <li> 
+                                        <i class="uil uil-window-maximize"></i>
+                                        <a style="color: rgb(208, 208, 69);" target="_blank" href="https://proto.io/">Proto.io</a>
+                                    </li>
+
+                                  <div style="margin-top: 20px;" class="qualification__calendar">
+                                      <i class="uil uil-calendar-alt"></i>
+                                      2023-2024
+                                   </div>
+                                </div>
+  
+                                <div>
+                                  <span class="qualification__rounder"></span>
+                                  <span class="qualification__line"></span>
+                                  <span style="position: relative; top: -20px;" class="qualification__rounder"></span>
+                                </div>
+
+                            </div>
+                         </div>
+                      </section>
+             <!--====================== END OF QUALIFICATION ======================-->
+
+
+            <!--====================== START OF PORTFOLIO PROJECTS ======================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 style="padding-top: 100px;" class="section__title">Projects</h2>
+                <span style="padding: 0;" class="section__subtitle">Take a look at some of the projects I made.</span>
+
+
+            <!--=============================================FILTERED PROJECTS=============================================-->
+                <div class="button-group">
+                    <button class="button active2" data-filter="*">All</button>
+                    <button class="button" data-filter=".design">Unreal Engine</button>
+                    <button class="button" data-filter=".development">Website</button>
+                </div>        
+                <!--  =====  Gallery Section Starts  =====  -->
+                <div class="gallery">                   
+        
+                    <!--  =====  Project 1 Starts  =====  -->
+                    <div class="item development">
+                        <img src="Projects/Filtered-Projects-no.2.png">
+                        <div class="overlay">
+                            <a href="E-commerce.html">View site <i class="uil uil-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!--  =====  Project 1 Ends =====  -->
+
+                     <!--  =====  Project 2 Starts  =====  -->
+                     <div class="item design">
+                        <img src="Projects/Filtered-Projects-no.1.png">
+                        <div class="overlay">
+                            <a href="The Lost Hospital.html">View site <i class="uil uil-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!--  =====  Project 2 Ends  =====  -->
+        
+                    <!--  =====  Project 3 Starts  =====  -->
+                    <div class="item development">
+                        <img src="Projects/Filtered-Projects-no.3.png">
+                        <div class="overlay">
+                            <a href="#">View site <i class="uil uil-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!--  =====  Project 3 Ends  =====  -->
+
+                    <!--  =====  Project 4 Starts  =====  -->
+                    <div class="item development">
+                        <img src="Projects/Filtered-Projects-no.4.png">
+                        <div class="overlay">
+                            <a href="TechTressure.html">View site <i class="uil uil-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!--  =====  Proect 4 Ends  =====  -->
+
+                     <!--  =====  Project 5 Starts  =====  -->
+                     <div class="item development">
+                        <img src="Projects/Filtered-Projects-no.5.png">
+                        <div class="overlay">
+                            <a href="Subpage.html">View site <i class="uil uil-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!--  =====  Proect 5 Ends  =====  -->
+
+                     <!--  =====  Project 6 Starts  =====  -->
+                     <div class="item development">
+                        <img src="Projects/Filtered-Projects-no.6.png">
+                        <div class="overlay">
+                            <a href="#">View site <i class="uil uil-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!--  =====  Proect 6 Ends  =====  -->
+
+                </div>
+                <!--  =====  Gallery Section Ends  =====  -->
+        </section>
+         <!--====================== END OF PORTFOLIO PROJECTS ======================-->
+        
+
+        <!-- ===========================IMPORTED QUERY====================== -->
+        <!--   =====   JQuery Link   =====   -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        
+        <!--   =====   Isotope Filter Link   =====  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+        
+        <script type="text/javascript">
+            var $galleryContainer = $('.gallery').isotope({
+                itemSelector: '.item',
+                  layoutMode: 'fitRows'
+            })
+        
+            $('.button-group .button').on('click', function(){
+                $('.button-group .button').removeClass('active2');
+                $(this).addClass('active2');
+        
+                var value = $(this).attr('data-filter');
+                $galleryContainer.isotope({
+                    filter: value 
+                })
+            })
+        </script>
+        <!-- ===========================END OF IMPORTED QUERY====================== -->
+
+
+          <!--=============================================WEBSITE PROTOTYPES=============================================-->
+          <h2 style="padding-top: 120px;" class="section__title">Portfolio Prototypes</h2>
+          <span style="padding-bottom: 0; margin-bottom: 0;" class="section__subtitle">Take a look of how I turned imagination into reality.</span>
+
+                <div style="margin-top: 70px;" class="portfolio__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    
+                         <!--====================== PROTO 1 ======================-->
+                         <div class="portfolio__content grid swiper-slide">
+                            <img src="Projects/Web-project-no.3.png" alt="" class="portfolio__img">
+                            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Website Login-Page</h3>
+                                <p class="portfolio__description">
+                                    CCS 114 Prelim activity <br> Website login landing page with ui components and animated interactions.
+                                </p>
+                                <a href="https://proto.io/" class="button button--flex button--small portfolio__button">
+                                    View All
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                         </div>
+
+                           <!--====================== PROTO 2 ======================-->
+                           <div class="portfolio__content grid swiper-slide">
+                            <img src="Projects/Web-project-no.2.png" alt="" class="portfolio__img">
+                            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Business Login-Page Design</h3>
+                                <p class="portfolio__description">
+                                    CCS 114 Midterm activity<br> Adaptable to all kinds of devices Website login landing page with ui components and animated interactions.
+                                   
+                                </p>
+                                <a href="https://proto.io/" class="button button--flex button--small portfolio__button">
+                                    View All
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                         </div>
+
+                           <!--====================== PROTO 3 ======================-->
+                           <div class="portfolio__content grid swiper-slide">
+                            <img src="Projects/Web-project-no.1.png" alt="" class="portfolio__img">
+                            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">ChatterBox</h3>
+                                <p class="portfolio__description">
+                                    CCS 114 Midterm activity<br>
+                                    Chatbox login page with ui components and animated interactions.
+                                </p>
+                                <a href="https://proto.io/" class="button button--flex button--small portfolio__button">
+                                    View All
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                         </div>
+                    </div>
+
+                    <!-- ARROWS AND ANIMATION -->
+                    <div class="swiper-button-next swiper-portfolio-icon">
+                        <i class="uil uil-angle-right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+                    </div>
+                    <!-- ANIM -->
+                    <div style="bottom: -4rem;" class="swiper-pagination"></div>
+            
+                </div>
+            </section>
+          <!--=============================================END OF WEBSITE PROTOTYPES=============================================-->
+
+
+          <!--=============================================BLOG SECTION=============================================-->
+            <h2 style="padding-top: 230px;" class="section__title" id="blog-section">Recent blogs</h2>
+            <span style="margin: 0;" class="section__subtitle">Unreal Engine 5 Basics</span>
+
+            <section class="blog">
+                <div class="blog-container">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="Blog-images/giphy.gif">
+                        </div>
+                        <div class="blog-text">
+                            <span>
+                                <i class="uil uil-clock"></i> Published on January 1, 2024
+                            </span>
+                            <a href="#" class="blog-title">What is Unreal Engine 5? / Overview</a>
+                            <p>Unreal Engine (UE) is a series of 3D computer graphics game engines developed by Epic Games, first showcased in the 1998 first...</p>
+                                <span class="button button--flex button--small button--link services__button"> Read Blog </span>
+                        </div>
+                    </div>
+        
+                    <!----------------->
+        
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="Blog-images/giphy3.gif">
+                        </div>
+                        <div class="blog-text">
+                            <span>
+                                <i class="uil uil-clock"></i>
+                                Published on January 14, 2024
+                            </span>
+                            <a href="#" class="blog-title">Environment design /Level modeling </a>
+                            <p>Learn how to make beautiful trees, fluffy grass, and sweeping landscapes with my brand new Unreal Engine for beginners.</p>                     
+                                <span class="button button--flex button--small button--link services__button"> Read Blog </span>
+                        </div>
+                    </div>
+        
+                    <!----------------->
+                    
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="Blog-images/giphy2.gif">
+                        </div>
+                        
+                        <div class="blog-text">
+                            <span>
+                                <i class="uil uil-clock"></i>
+                                Published on February 10, 2024
+                            </span>
+                            <a href="#" class="blog-title">What is unreal engine Blueprints?</a>
+                            <p>Learn how to use Unreal Engine Blueprints and scripting? This blueprint tutorial is the perfect place to start!</p>
+                                <span class="button button--flex button--small button--link services__button"> Read Blog </span>
+                        </div>
+                    </div>
+        
+                </div>
+            </section>
+        <!--=============================================END OF BLOG SECTION=============================================-->
+      
+
+            <!--====================== CONTACT SECTION  ======================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact</h2>
+                <span class="section__subtitle">Get in touch </span>
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Call me</h3>
+                                <span class="contact__subtitle">+63 99-099-899</span>
+                            </div>
+                        </div>
+
+                        <!-- ===== -->
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle"><a style="color: #A69FAD;" href="https://mail.google.com/mail/u/1/#inbox">Charlesplaton263@Gmail.com</a></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <p style="margin-top: 20px;">Let's talk.
+                            Feel free to send me an Email or send a private message in my
+                            Instagram.
+                        </p>
+                        <p style="margin-top: 20px;">
+                            <a href="https://www.instagram.com/chrls_plnkton/">
+                             <i class="uil uil-instagram"></i>
+                             Chrls_plnkton</a>
+                        </p>  
+                    </div>
+                   
+                </div>
+            </section>
+        <!--====================== END OFCONTACT SECTION  ======================-->
+        </main>
+
+        <!--================================================ END MAIN  =================================================-->
+
+            <!--====================== FOOTER SECTION ======================-->
+            <footer class="footer">
+                <div class="footer__bg">
+                    <div class="footer__container container grid">
+                        <div>
+                            <h1 class="footer__title">Charles</h1>
+                            <span class="footer__subtitle">Self-taught Developer</span>
+                        </div>
+
+                        <!-- LINKS -->
+                        <ul class="footer__links">
+                            <!-- ////// -->
+                            <li>
+                                <a href="#services" class="footer__link">Services</a>
+                            </li>
+                            <!-- ////// -->
+                            <li>
+                                <a href="#portfolio" class="footer__link">Projects</a>
+                            </li>
+                            <!-- ////// -->
+                            <li>
+                                <a href="#contact" class="footer__link">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- LINKS -->
+
+                        <div class="footer__socials">
+                            <!-- ///// -->
+                            <a href="https://www.facebook.com/profile.php?id=100076449155727" target="_blank" class="footer__social">
+                                <i class="uil uil-facebook-f"></i>
+                            </a>
+                            <!-- ///// -->
+                            <a href="https://www.instagram.com/chrls_plnkton/" target="_blank" class="footer__social">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <!-- ///// -->
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="footer__copy">&#169; Charles P. All rights reserved</p>
+                </div>
+            </footer>
+            <!--====================== FOOTER SECTION ======================-->
+
+
+            <!--====================== SCROLL ANIM TOP ======================-->
+                <a href="#" class="scrollup" id="scroll-up">
+                    <i class="uil uil-arrow-up scrollup__icon"></i>
+                </a>
+            <!--====================== END OF SCROLL ANIM TOP ======================-->
+
+        <!-- SWIPWER JS -->
+        <script src="swiper-bundle.min.js"></script>
+
+        <!-- MAIN JAVASCRIPT -->
+        <script src="Main.js"></script>
+
+    </body>
+</html>

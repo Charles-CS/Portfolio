@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone's Cart</title>
+    <link rel="stylesheet" href="AddToCart-Design.css">
+    <link rel="icon" type="image/png" href="Blog-images/Tab-Icon.png">
+
+</head>
+<body class="">
+    <div class="container">
+        <header>
+            <h1 style="font-size: 32px;"><a href="TechTressure.html" id="home-link">Tech Tressure Drones & Accesorries</a></h1>
+            <div class="shopping">
+                <svg fill="#000000" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	             viewBox="0 0 483.1 483.1" xml:space="preserve">
+                <g>
+	            <path d="M434.55,418.7l-27.8-313.3c-0.5-6.2-5.7-10.9-12-10.9h-58.6c-0.1-52.1-42.5-94.5-94.6-94.5s-94.5,42.4-94.6,94.5h-58.6
+	        	c-6.2,0-11.4,4.7-12,10.9l-27.8,313.3c0,0.4,0,0.7,0,1.1c0,34.9,32.1,63.3,71.5,63.3h243c39.4,0,71.5-28.4,71.5-63.3
+		        C434.55,419.4,434.55,419.1,434.55,418.7z M241.55,24c38.9,0,70.5,31.6,70.6,70.5h-141.2C171.05,55.6,202.65,24,241.55,24z
+		         M363.05,459h-243c-26,0-47.2-17.3-47.5-38.8l26.8-301.7h47.6v42.1c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h141.2v42.1
+		        c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h47.6l26.8,301.8C410.25,441.7,389.05,459,363.05,459z"/>
+                </g>
+                </svg>
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1>My Cart</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+       
+    </div>
+
+
+<!-- JAVASCRIPT  -->
+<script>
+
+let openShopping = document.querySelector('.shopping');
+let closeShopping = document.querySelector('.closeShopping');
+let list = document.querySelector('.list');
+let listCard = document.querySelector('.listCard');
+let body = document.querySelector('body');
+let total = document.querySelector('.total');
+let quantity = document.querySelector('.quantity');
+
+openShopping.addEventListener('click', ()=>{
+    body.classList.add('active');
+})
+closeShopping.addEventListener('click', ()=>{
+    body.classList.remove('active');
+})
+
+let products = [
+
+    {
+        id: 1,
+        name: 'CPI Mavic 3 Pro',
+        image: 'Drone-Pictures/DroneToCart-No.1.png',
+        price: 2199
+    },
+    {
+        id: 2,
+        name: 'CPI Mini 4 Pro',
+        image: 'Drone-Pictures/DroneToCart-No.2.png',
+        price: 1399
+    },
+    {
+        id: 3,
+        name: 'CPI Air 3',
+        image: 'Drone-Pictures/DroneToCart-No.3.png',
+        price: 1199
+    },
+    {
+        id: 4,
+        name: 'CPI Inspire 3',
+        image: 'Drone-Pictures/DroneToCart-No.4.png',
+        price: 16199
+    },
+    // ----
+    {
+        id: 1,
+        name: 'CPI RS 3 Mini',
+        image: 'Drone-Pictures/Gimbal-No.1.png',
+        price: 279
+    },
+    {
+        id: 2,
+        name: 'PCPI RS 3 Mini Pro',
+        image: 'Drone-Pictures/Gimbal-No.2.png',
+        price: 579
+    },
+    {
+        id: 3,
+        name: 'CPI Ronin 4D-8K',
+        image: 'Drone-Pictures/Cinema-Camera-No.1.png',
+        price: 6999
+    },
+    {
+        id: 4,
+        name: 'CPI Ronin 4D-8K Pro',
+        image: 'Drone-Pictures/Cinema-Camera-No.1.png',
+        price: 7999
+    },
+    // -----
+    {
+        id: 1,
+        name: 'CPI Mini 4 Pro',
+        image: 'Drone-Pictures/CameraDrone-Item-No.1.png',
+        price: 759
+    },
+    {
+        id: 2,
+        name: 'CPI Mavic 3 Ultra',
+        image: 'Drone-Pictures/CameraDrone-Item-No.2.png',
+        price: 2799
+    },
+    {
+        id: 3,
+        name: 'CPI Inspire 3s',
+        image: 'Drone-Pictures/CameraDrone-Item-No.3.png',
+        price: 11999
+    },
+    {
+        id: 4,
+        name: 'CPI Inspire 3s Pro',
+        image: 'Drone-Pictures/CameraDrone-Item-No.1.png',
+        price: 15799
+    },
+    // -----
+    {
+        id: 1,
+        name: 'CPI Arial Drone X1',
+        image: 'Drone-Pictures/Scrolled-Image-No.1.png',
+        price: 120000
+    },
+    {
+        id: 2,
+        name: 'CPI Arial Drone X1 Pro',
+        image: 'Drone-Pictures/Scrolled-Image-No.2.png',
+        price: 120000
+    },
+    {
+        id: 3,
+        name: 'CPI Emmersive X3',
+        image: 'Drone-Pictures/Scrolled-Image-No.3.png',
+        price: 18000
+    },
+    {
+        id: 4,
+        name: 'CPI Emmersive X3 Pro',
+        image: 'Drone-Pictures/Scrolled-Image-No.4.png',
+        price: 23000
+    },
+    // -----
+    {
+        id: 1,
+        name: 'CPI FPV Controller 3',
+        image: 'Drone-Pictures/Accesorries-No.1.png',
+        price: 199
+    },
+    {
+        id: 2,
+        name: 'RC Motion 3',
+        image: 'Drone-Pictures/Accesorries-No.2.png',
+        price: 99
+    },
+    {
+        id: 3,
+        name: 'CPI Goggles 3',
+        image: 'Drone-Pictures/Accesorries-No.3.png',
+        price: 999
+    },
+    {
+        id: 4,
+        name: 'CPI RC Plus(Inspire 3)',
+        image: 'Drone-Pictures/Accesorries-No.4.png',
+        price: 1600
+    },
+    // -----
+    {
+        id: 1,
+        name: 'CPI Pro Propellers',
+        image: 'Drone-Pictures/Second-Row-Accesorries-No.1.png',
+        price: 9
+    },
+    {
+        id: 2,
+        name: 'CPI Mini Propellers',
+        image: 'Drone-Pictures/Second-Row-Accesorries-No.2.png',
+        price: 12
+    },
+    {
+        id: 3,
+        name: 'CPI Avata Propellers',
+        image: 'Drone-Pictures/Second-Row-Accesorries-No.3.png',
+        price: 9
+    },
+    {
+        id: 4,
+        name: 'CPI FPV Propellers',
+        image: 'Drone-Pictures/Second-Row-Accesorries-No.4.png',
+        price: 15
+    },
+    
+    
+];
+let listCards  = [];
+function initApp(){
+    products.forEach((value, key) =>{
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('item');
+        newDiv.innerHTML = `
+            <img src="${value.image}">
+            <div class="title">${value.name}</div>
+            <div class="price">${value.price.toLocaleString()}</div>
+            <button onclick="addToCard(${key})">Add To Card</button>`;
+        list.appendChild(newDiv);
+    })
+}
+initApp();
+function addToCard(key){
+    if(listCards[key] == null){
+        // copy product form list to list card
+        listCards[key] = JSON.parse(JSON.stringify(products[key]));
+        listCards[key].quantity = 1;
+    }
+    reloadCard();
+}
+function reloadCard(){
+    listCard.innerHTML = '';
+    let count = 0;
+    let totalPrice = 0;
+    listCards.forEach((value, key)=>{
+        totalPrice = totalPrice + value.price;
+        count = count + value.quantity;
+        if(value != null){
+            let newDiv = document.createElement('li');
+            newDiv.innerHTML = `
+                <div><img src="${value.image}"/></div>
+                <div>${value.name}</div>
+                <div>${value.price.toLocaleString()}</div>
+                <div>
+                    <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
+                    <div class="count">${value.quantity}</div>
+                    <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
+                </div>`;
+                listCard.appendChild(newDiv);
+        }
+    })
+    total.innerText = totalPrice.toLocaleString();
+    quantity.innerText = count;
+}
+function changeQuantity(key, quantity){
+    if(quantity == 0){
+        delete listCards[key];
+    }else{
+        listCards[key].quantity = quantity;
+        listCards[key].price = quantity * products[key].price;
+    }
+    reloadCard();
+}
+
+
+</script>
+</body>
+</html>

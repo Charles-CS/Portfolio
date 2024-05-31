@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Tressure</title>
+    <!-- Para sa CSS -->
+    <link rel="stylesheet" href="TechTressure-Design.css" />
+    <link rel="icon" type="image/png" href="Blog-images/Tab-Icon.png">
+
+    <!-- Para sa Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+   
+   <!-- Para Sa Image Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  </head>
+  <body>
+
+    <!-- =================================== START OF NAVIGATION BAR ================================= -->
+    <nav style="position: sticky;">
+      <div class="nav__bar">
+        <a href="#">Tech Tressure</a>
+        <!-- Para sa responsive links -->
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+
+      <!-- =====Links===== -->
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#drone-section">Drones</a></li>
+        <li><a href="#camera-section">Camera</a></li>
+        <li><a href="#accesorries-section">Accessories</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#blog">Article</a></li>
+      <!-- =====End of Links===== -->
+
+       <!-- Search bar -->
+        <form id="search-bar">
+          <input type="search" id="sb" name="dronebar" placeholder="Search...">
+          <a href="TechTressure.html"><i class="ri-search-line"></i></a>
+        </form>
+       <!-- End ng search bar -->
+
+        <a href="AddToCart.html"><i class="ri-user-line"></i></a>
+        <!-- <li><a href="#blog">Drone's Cart</a></li> -->
+      </ul>
+    </nav>
+     <!-- =================================== START OF NAVIGATION BAR ================================= -->
+
+     <!-- =================================== START OF HEADER CONTENT ================================= -->
+    <header style="padding-bottom: 90px; margin-top: 40px; " class="section__container header__container" id="home">
+      <div class="header__image" id="home-section">
+        <img src="Drone-Pictures/Main-Drone.png" alt="header" />
+      </div>
+
+      <!-- =====HEADER CONENT===== -->
+      <div class="header__content">
+        <h1>Your Destination for Cutting-Edge <br><br /><span>UP TO 10% OFF</span></h1>
+        <p class="section__description">
+          Free Gift with Mini 4 Pro Purchase Only at CPI Store
+        </p>
+        <div class="header__btn">
+          <a href="#blog"><button class="btn" id="sub-button">Learn More</button></a>
+          <a href="AddToCart.html"><button class="btn" id="sub-button">Shop Now</button></a>
+        </div>
+      </div>
+      <!-- =====END OFHEADER CONENT===== -->
+     </div>
+    </header>
+     <!-- =================================== END OF HEADER CONTENT ================================= -->
+
+
+<!-- ======================= START NG IMPORTED NA IMAGE SLIDER ========================= -->
+
+<div class="brand-carousel section-padding owl-carousel">
+
+    <!-- =====================Drone Slider=================== -->
+      <div class="single-logo">
+        <a href="#"><img alt="" src="Drone-Pictures/Scrolled-Image-No.1.png"></a>
+        <p>CPI Ultra Mavic Pro </p>
+      </div>
+    <!----------------------------------------->
+      <div class="single-logo">
+        <a href="#"><img alt="" src="Drone-Pictures/Scrolled-Image-No.2.png"></a>
+        <p style="margin-top: 1.15rem;">CPI Newest Air</p>
+      </div>
+    <!----------------------------------------->
+      <div class="single-logo">
+        <a href="#"><img alt="" src="Drone-Pictures/Scrolled-Image-No.3.png"></a>
+        <p style="margin-top: 1.3rem;">CPI Ultimate Avata</p>
+      </div>
+    <!----------------------------------------->
+      <div class="single-logo">
+        <a href="#"><img alt="" src="Drone-Pictures/Scrolled-Image-No.4.png"></a>
+        <p style="margin-top: 2.2rem;">CPI Professional Drone</p>
+      </div>
+    <!----------------------------------------->
+    <div class="single-logo">
+      <a href="#"><img alt="" src="Drone-Pictures/Scrolled-Image-No.5.png"></a>
+      <p style="margin-top: 1rem;">CPI Inspire Drone</p>
+    </div>
+    <!----------------------------------------->
+    <div class="single-logo">
+      <a href="#"><img alt="" src="Drone-Pictures/Scrolled-Image-No.6.png"></a>
+      <p style="margin-top: 0.2rem;">CPI Phantom Pro</p>
+    </div>
+
+</div>
+<!-- =====================End of Drone Slider=================== -->
+
+<!-- =====Imported query para sa drone slider===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+      $('.brand-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsive: {
+              0: {
+                  items: 1
+              },
+              600: {
+                  items: 3
+              },
+              1000: {
+                  items: 5
+              }
+          }
+      })
+  </script>
+<!-- =====Imported query===== -->
+<!-- ======================= END NG IMPORTED NA IMAGE SLIDER ========================= -->
+
+    <!-- START OF CENTERED TITLE AND SUBTITLE TO LAGI KADA SECTION -->
+    <div style="padding: 120px 0 10px 0;" class="centered--text" id="camera-section">
+    <h2 class="section__header">What's New?</h2>
+      <p class="section__description">
+        Take a look at some of our latest product.
+      </p>
+    </div>
+    <!-- END OF CENTERED TITLE AND SUBTITLE TO LAGI KADA SECTION -->
+
+
+    <!-- ==================================NEW ADDED NA WALA SA UNANG WIREFRAME========================= -->
+    <section class="featured-photo">  
+      <div class="body">
+        <div style="gap: 50px;" class="row">
+
+          <!-- Featured 1 -->
+            <div class="imgWrapper">
+                <img src="Drone-Pictures/Latest-Gadget-No.1.png" alt="">
+            </div>
+           <!-- Featured 2 -->
+            <div class="imgWrapper">
+              <img src="Drone-Pictures/Latest-Gadget-No.2.png" alt="">
+          </div>
+      
+        </div>
+
+        <!-- ================================ ITO NA YUNG MGA DRONE ============================== -->
+        <div style="margin-top: 10px; margin-bottom: 10px;" class="Main__Drone" id="features">
+          <!-- ================================ -->
+          <div class="product-flex">
+              <div class="product-one" id="product-one__border-radius"> 
+                    <img src="Drone-Pictures/Gimbal-No.1.png" id="gimbal-cinecam-Img" alt="">         
+                    <a href="AddToCart.html">
+                    <div class="gimbal-cinecam-info">
+                      <p style="font-size: 0.85rem;"><b style="color: #FA9120;">New •</b> Lightweight Commercial...</p>
+                      <h1>CPI RS 3 Mini</h1>
+                      <p>From USD $549</p>
+                    </div>
+                    </a>   
+              </div>
+           <!-- ================================ -->
+          <div class="product-one" id="product-one__border-radius">
+                <img src="Drone-Pictures/Gimbal-No.2.png" id="gimbal-cinecam-Img" alt="">
+
+                <a href="AddToCart.html">
+                <div class="gimbal-cinecam-info">
+                  <p style="font-size: 0.85rem;"><b style="color: #FA9120;">New •</b>Lightweight Stabilizer</p>
+                  <h1>CPI RS 3 Mini</h1>
+                  <p>From USD $279</p>
+                </div>
+                </a>    
+          </div>
+           <!-- ================================ -->       
+          <div class="product-one" id="product-one__border-radius">
+                <img src="Drone-Pictures/Cinema-Camera-No.1.png" id="gimbal-cinecam-Img" alt="">
+                  
+                <a href="AddToCart.html">
+                <div class="gimbal-cinecam-info">
+                  <p style="font-size: 0.85rem;"><b style="color: #FA9120;">New •</b>Cinema Camera</p>
+                  <h1>CPI Ronin 4D-8K</h1>
+                  <p>From USD $6,799</p>
+                </div>
+                </a>
+          </div>
+           <!-- ================================ -->    
+          <div class="product-one" id="product-one__border-radius">
+              <img src="Drone-Pictures/All-Accesories-No.1.png" id="gimbal-cinecam-Img"   alt="">   
+           
+              <a href="AddToCart.html">
+              <div class="gimbal-cinecam-info">    
+                <h1 style="padding: 8px; text-align: center; font-weight: 600; font-size: 1.2rem;">All Accesorries <i class="ri-arrow-right-s-line"></i></h1>
+              </div>    
+              </a>
+          </div>
+           <!-- ================================ -->
+    </div>
+     <!-- ================================ END NG MGA DRONE ============================== -->
+
+
+    <!-- ================================ START OF CAMERA DRONE MOVIE ============================== -->
+    <div class="latest-video">
+      <div style="padding: 120px 0 20px 0;" class="centered--text">
+        <h2 style="text-align: left;" class="section__header">Camera Drones</h2>
+        </div>
+
+      <!-- MOVIE -->
+      <video style="height: 560px;" autoplay loop muted plays-inline class="bgv">
+        <source src="Drone-Pictures/Camera-Drone-Movie.mp4" type="video/mp4">
+      </video>
+      <!-- END OF MOVIE -->
+
+      <!-- CONTENT NG MGA DRONE ULIT -->
+        <div style="margin: 17px 0 20px 0; width: 100%;" class="Main__Drone" id="features">
+          <div class="product-flex">
+              <div class="product-one" id="product-one__border-radius"> 
+                    <img src="Drone-Pictures/CameraDrone-Item-No.1.png" id="gimbal-cinecam-Img" alt="">
+                    
+                    <a href="AddToCart.html">
+                    <div class="gimbal-cinecam-info">
+                      <p style="font-size: 0.85rem;"><b style="color: #FA9120;">New •</b>Advanced Drone</p>
+                      <h1>CPI Mini 4 Pro</h1>
+                      <p>From USD $759</p>
+                    </div>
+                    </a>              
+              </div>
+          <!-- ================================ -->         
+          <div class="product-one" id="product-one__border-radius">
+                <img src="Drone-Pictures/CameraDrone-Item-No.2.png" id="gimbal-cinecam-Img" alt="">
+
+                <a href="AddToCart.html">
+                <div class="gimbal-cinecam-info">
+                  <p style="font-size: 0.85rem;"><b style="color: #FA9120;">New •</b>Advanced Drone</p>
+                  <h1>CPI Mavic 3 Ultra</h1>
+                  <p>From USD $2,799</p>
+                </div>
+                </a>                      
+          </div>
+           <!-- ================================ -->         
+          <div class="product-one" id="product-one__border-radius">
+                <img src="Drone-Pictures/CameraDrone-Item-No.3.png" id="gimbal-cinecam-Img" alt="">
+                  
+                <a href="AddToCart.html">
+                <div class="gimbal-cinecam-info">
+                  <p style="font-size: 0.85rem;"><b style="color: #FA9120;">New •</b>Cinema Camera</p>
+                  <h1>CPI Inspire 3s</h1>
+                  <p>From USD $15,799</p>
+                </div>
+                </a>
+          </div>
+           <!-- ================================ -->       
+          <div class="product-one" id="product-one__border-radius">
+              <img src="Drone-Pictures/All-Accesories-No.2.png" id="gimbal-cinecam-Img"   alt="">   
+           
+              <a href="AddToCart.html">
+              <div class="gimbal-cinecam-info">
+                <h1 style="padding: 5.5px; text-align: center; font-weight: 600; font-size: 1.2rem;">Drone Accesorries <i class="ri-arrow-right-s-line"></i></h1>
+              </div>      
+              </a>
+          </div>
+           <!-- ================================ -->  
+    </div>
+   
+    </section>
+    <!-- ================================ END OF CAMERA DRONE MOVIE ============================== -->
+
+   
+
+<!-- ================================ DETAILED DRONE OR YUNG MGA MAIN DRONES ============================== -->
+<div style="background-color: #ffffff;" class="body">
+  
+ <!-- CENTERED TITLE AND SUBTITLE TO LAGI KADA SECTION -->
+ <div style="padding: 100px 0 0 0;" class="centered--text">
+  <h2 class="section__header">Which camera drone is right for you?</h2>
+    <p class="section__description">
+      Capture your moments from above with
+      a mini drone, FPV, or professional aerial camera.
+    </p>
+  </div>
+
+<!-- ================================ ROW SECTION FOR MAIN DRONES ================================ --> 
+
+  <!-- ==================START NG MOVIE MINI DRONE ================= -->
+  <div class="row">
+      <div  class="imgWrapper">
+        <!-- PARA SA VIDEO TO -->
+        <video autoplay loop muted plays-inline class="bgv">
+          <source src="Drone-Pictures/Mini-Drone-Movie.webm" type="video/mp4">
+        </video>
+        <!-- PARA SA VIDEO TO -->
+      </div>
+
+      <!-- Main Drone -Content info -->
+      <div class="contentWrapper">
+          <div class="content">
+              <span class="textWrapper">
+                  <span></span>Take it Easy
+              </span>
+              <h2>Go Big With Mini</h2>
+              <p>DJI Mini 4 Pro is our most advanced mini-camera drone to date. [4] It integrates powerful imaging capabilities, omnidirectional obstacle sensing, ActiveTrack 360° with the new Manual Mode, and 20km FHD video transmission, bringing even more things to love for pros and beginners alike.</p> 
+          </div>
+      </div>
+  </div>
+  </div>
+  <!-- ==================END NG MOVIE MINI DRONE ================= -->
+
+<!-- ====================================== START OF THE BIG PRODUCT // MAIN DRONES ======================================= -->
+<div class="Main__Drone" id="features">
+  <!-- =====Title===== -->
+  <div class="product-title" id="drone-section">
+      <h2>
+          Arial Imaging & Immersive Flights
+      </h2>
+      <hr>
+  </div>
+  <!-- =====Title===== -->
+
+  <div class="product-flex">
+    <div class="product-one">
+        <div class="product-image">
+            <img src="Drone-Pictures/DroneToCart-No.1.png" alt="">
+            <div class="overlay">
+              <a href="AddToCart.html">
+                <i class="ri-shopping-bag-fill"></i>
+                <i class="ri-heart-2-fill"></i>
+                <i class="ri-search-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Drone Description -->
+        <div class="content">
+            <div class="info">
+                <h5>Flagship</h5>
+
+                <h4>DJI Mavic 3 Pro</h4>
+
+                <article>
+                  <a href="AddToCart.html"><button class="buy__button">Where to Buy</button></a>
+                </article>
+
+                <h3>958 g</h3>
+                <p>Takeoff Weight</p>
+            
+                <i style="font-size: 60px;" class="ri-battery-charge-line"></i>
+                <p>43 mins Max Flight Time</p>
+
+                <i style="font-size: 60px;" class="ri-4k-line"></i>
+                <p style="margin-bottom: 5px;"><b style="font-weight: 500;">5.1K/50fps</b></p>
+                <p>Max Video Resolution</p>
+
+                <h3 style="font-size: 50px;">48 MP</h3>
+                <p>Max Photo Resolution</p>
+
+                <i style="font-size: 60px;" class="ri-remote-control-fill"></i>
+                <p style="margin-bottom: 5px;"><b style="font-weight: 500;">DJI O3+ HD Digital Video Transmission</b></p>
+
+                <p>
+                  Up to 15 km Transmission Distance
+                  1080p/60fps Live Feed
+                </p>
+            </div> 
+        </div>
+             
+    </div>
+
+    <!-- ============================ SPACE =========================== -->
+
+    <div class="product-one">
+      <div class="product-image">
+          <img src="Drone-Pictures/DroneToCart-No.2.png" alt="">
+          <div class="overlay">
+            <a href="AddToCart.html">
+              <i class="ri-shopping-bag-fill"></i>
+              <i class="ri-heart-2-fill"></i>
+              <i class="ri-search-line"></i>
+              </a>
+          </div>
+      </div>
+
+      <!-- Main Drone Description -->
+      <div class="content">
+          <div class="info">
+
+              <h5>Advanced</h5>
+
+              <h4> DJI Air 3</h4>
+
+              <article>
+                <a href="AddToCart.html"><button class="buy__button">Where to Buy</button></a>
+              </article>
+
+              <h3>720 g</h3>
+              <p>Takeoff Weight</p>
+          
+              <i style="font-size: 60px;" class="ri-battery-charge-line"></i>
+              <p>46 mins Max Flight Time</p>
+
+              <i style="font-size: 60px;" class="ri-4k-line"></i>
+              <p style="margin-bottom: 5px;"><b style="font-weight: 500;">5.1K/50fps</b></p>
+              <p>Wide-Angle/Medium Tele Camera:
+                4K/60fps</p>
+
+              <h3 style="font-size: 50px;">48 MP</h3>
+              <p>Max Photo Resolution</p>
+
+              <i style="font-size: 60px;" class="ri-remote-control-fill"></i>
+              <p style="margin-bottom: 5px;"><b style="font-weight: 500;">DJI O4: Up to 20 km</b></p>
+
+              <p>
+                DJI O4: Up to 20 km
+                1080p/60fps Live Feed
+              </p>
+          </div>
+         
+      </div>  
+  </div>
+
+   <!-- ============================ SPACE =========================== -->
+
+  <div class="product-one">
+    <div class="product-image">
+      <img src="Drone-Pictures/DroneToCart-No.3.png" alt="">
+        <div class="overlay">
+          <a href="AddToCart.html">
+            <i class="ri-shopping-bag-fill"></i>
+            <i class="ri-heart-2-fill"></i>
+            <i class="ri-search-line"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Drone Description -->
+    <div class="content">
+        <div class="info">
+
+            <h5>Entry</h5>
+
+            <h4>DJI Mini 4 Pro</h4>
+
+            <article>
+              <a href="AddToCart.html"><button class="buy__button">Where to Buy</button></a>
+            </article>
+
+            <h3>< 249 g</h3>
+            <p>Takeoff Weight</p>
+        
+            <i style="font-size: 60px;" class="ri-battery-charge-line"></i>
+            <p>34/45-Min 
+              Depending on the Choice of Battery</p>
+
+            <i style="font-size: 60px;" class="ri-4k-line"></i>
+            <p style="margin-bottom: 5px;"><b style="font-weight: 500;">4K/60fps HDR
+              4K/100fps</b></p>
+            <p>Max Video Resolution</p>
+
+            <h3 style="font-size: 50px;">48 MP</h3>
+            <p>Max Photo Resolution</p>
+
+            <i style="font-size: 60px;" class="ri-remote-control-fill"></i>
+            <p style="margin-bottom: 5px;"><b style="font-weight: 500;">DJI O4: Up to 20 km</b></p>
+
+            <p>1080p/60fps Live Feed</p>
+        </div>
+       
+    </div>    
+</div>
+
+   <!-- ============================ SPACE ============================ -->
+
+<div class="product-one">
+  <div class="product-image">
+    <img src="Drone-Pictures/DroneToCart-No.4.png" alt="">
+      <div class="overlay">
+        <a href="AddToCart.html">
+          <i class="ri-shopping-bag-fill"></i>
+          <i class="ri-heart-2-fill"></i>
+          <i class="ri-search-line"></i>
+          </a>
+      </div>
+  </div>
+
+  <!-- Main Drone Description -->
+  <div class="content">
+      <div class="info">
+
+          <h5>Entry</h5>
+
+          <h4>DJI Mini 3</h4>
+
+          <article>
+            <a href="AddToCart.html"><button class="buy__button">Where to Buy</button></a>
+          </article>
+
+          <h3>< 249 g</h3>
+          <p>Takeoff Weight</p>
+      
+          <i style="font-size: 60px;" class="ri-battery-charge-line"></i>
+          <p>34/45-Min 
+            Depending on the Choice of Battery</p>
+
+          <i style="font-size: 60px;" class="ri-4k-line"></i>
+          <p style="margin-bottom: 5px;"><b style="font-weight: 500;">4K/30fps</b></p>
+          <p>Max Video Resolution</p>
+
+          <h3 style="font-size: 50px;">48 MP</h3>
+          <p>Max Photo Resolution</p>
+
+          <i style="font-size: 60px;" class="ri-remote-control-fill"></i>
+          <p style="margin-bottom: 5px;"><b style="font-weight: 500;">DJI O2: Up to 10 km</b></p>
+
+          <p>720p/30fps Live Feed</p>
+      </div>  
+    </div>
+   </div>
+
+    <!-- ================== SPACE ================= -->
+
+ </div>
+</div>
+<!-- ====================================== END NG MGA MAIN DRONE ======================================= -->
+
+
+<!-- ======================== DI KO PA NA EEDIT SIMULA DITO PERO ITO YUNG GALLERY ======================= -->
+
+ <!-- CENTERED TITLE AND SUBTITLE TO LAGI KADA SECTION -->
+ <div style="padding: 0; " class="centered--text">
+  <h2 class="section__header">Drone Gallery</h2>
+    <p class="section__description">
+      From the outer design to the internal structure, every detail was carefully considered and optimized.
+    </p>
+  </div>
+
+    <!-- ===============START OF GALLERY PICTURES============ -->
+    <section class="section__container gallery__container" id="gallery">
+      <div class="gallery__image">
+        <img src="Drone-Pictures/DroneToCart-No.2.png" alt="gallery" />
+        <div class="gallery__image__details">
+          <h4>Flagship</h4>
+          <div>
+            <button class="btn">Learn More</button>
+            <a href="AddToCart.html"><button class="btn">Purchase Now</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================== SPACE ================= -->
+
+      <div class="gallery__image">
+        <img src="Drone-Pictures/DroneToCart-No.1.png" alt="gallery" />
+        <div class="gallery__image__details">
+          <h4>Advanced</h4>
+          <div>
+            <button class="btn">Learn More</button>
+            <a href="AddToCart.html"><button class="btn">Purchase Now</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================== SPACE ================= -->
+
+      <div class="gallery__image">
+        <img src="Drone-Pictures/DroneToCart-No.3.png" alt="gallery" />
+        <div class="gallery__image__details">
+          <h4>Entry</h4>
+          <div>
+            <button class="btn">Learn More</button>
+            <a href="AddToCart.html"><button class="btn">Purchase Now</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================== SPACE ================= -->
+
+      <div class="gallery__image">
+        <img src="Drone-Pictures/DroneToCart-No.4.png" alt="gallery" />
+        <div class="gallery__image__details">
+          <h4>Advanced</h4>
+          <div>
+            <button class="btn">Learn More</button>
+            <a href="AddToCart.html"><button class="btn">Purchase Now</button></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- ===============EBD OF GALLERY PICTURES============ -->  
+
+    <!-- ================== SAVE UP TO 20P SECTION ================= -->
+    <section class="Save__Img" >
+      <img src="Drone-Pictures/SaveUpTo-20P-Image.png" alt="">
+    </section>
+    <!-- ================== END SAVE UP TO 20P SECTION ================= -->
+
+  <!-- ==================================================== END NG GALLERY ===================================================== -->
+
+
+  <!-- ========================================= PANGALAWA NA MENU MGA ACCESORRIES NAMAN TO ========================================= -->
+
+<div class="Main__Drone" id="features">
+  <div class="product-title" id="accesorries-section">
+      <h2>
+          Drone Accessories
+      </h2>
+      <hr>
+  </div>
+  <div class="product-flex">
+      <div class="product-one">
+          <div class="product-image">
+              <img src="Drone-Pictures/Accesorries-No.1.png" alt="">
+              <div class="overlay">
+                <a href="AddToCart.html">
+                <i class="ri-shopping-bag-fill"></i>
+                <i class="ri-heart-2-fill"></i>
+                <i class="ri-search-line"></i>
+                </a>
+              </div>
+          </div>         
+      </div>
+
+      <!-- ================== SPACE ================= -->
+
+      <div class="product-one">
+        <div class="product-image">
+          <img src="Drone-Pictures/Accesorries-No.2.png" alt="">
+            <div class="overlay">
+              <a href="AddToCart.html">
+                <i class="ri-shopping-bag-fill"></i>
+                <i class="ri-heart-2-fill"></i>
+                <i class="ri-search-line"></i>
+                </a>
+            </div>
+        </div>         
+    </div>
+
+    <!-- ================== SPACE ================= -->
+
+    <div class="product-one">
+      <div class="product-image">
+        <img src="Drone-Pictures/Accesorries-No.3.png" alt="">
+          <div class="overlay">
+            <a href="AddToCart.html">
+              <i class="ri-shopping-bag-fill"></i>
+              <i class="ri-heart-2-fill"></i>
+              <i class="ri-search-line"></i>
+              </a>
+          </div>
+      </div> 
+  </div>
+
+  <!-- ================== SPACE ================= -->
+
+  <div class="product-one">
+    <div class="product-image">
+      <img src="Drone-Pictures/Accesorries-No.4.png" alt="">
+        <div class="overlay">
+          <a href="AddToCart.html">
+            <i class="ri-shopping-bag-fill"></i>
+            <i class="ri-heart-2-fill"></i>
+            <i class="ri-search-line"></i>
+            </a>
+        </div>
+    </div>
+  </div>
+
+  <!-- ----------------------==================SECOND ROW==================--------------------- -->
+  
+  <div class="product-one">
+    <div class="product-image">
+      <img src="Drone-Pictures/Second-Row-Accesorries-No.1.png" alt="">
+        <div class="overlay">
+          <a href="AddToCart.html">
+            <i class="ri-shopping-bag-fill"></i>
+            <i class="ri-heart-2-fill"></i>
+            <i class="ri-search-line"></i>
+            </a>
+        </div>
+    </div>
+  </div>
+
+  <!-- ================== SPACE ================= -->
+
+  <div class="product-one">
+    <div class="product-image">
+      <img src="Drone-Pictures/Second-Row-Accesorries-No.2.png" alt="">
+        <div class="overlay">
+          <a href="AddToCart.html">
+            <i class="ri-shopping-bag-fill"></i>
+            <i class="ri-heart-2-fill"></i>
+            <i class="ri-search-line"></i>
+            </a>
+        </div>
+    </div>
+  </div>
+
+  <!-- ================== SPACE ================= -->
+
+  <div class="product-one">
+    <div class="product-image">
+      <img src="Drone-Pictures/Second-Row-Accesorries-No.3.png" alt="">
+        <div class="overlay">
+          <a href="AddToCart.html">
+            <i class="ri-shopping-bag-fill"></i>
+            <i class="ri-heart-2-fill"></i>
+            <i class="ri-search-line"></i>
+            </a>
+        </div>
+    </div>
+  </div>
+
+  <!-- ================== SPACE ================= -->
+
+  <div class="product-one">
+    <div class="product-image">
+      <img src="Drone-Pictures/Second-Row-Accesorries-No.4.png" alt="">
+        <div class="overlay">
+          <a href="AddToCart.html">
+            <i class="ri-shopping-bag-fill"></i>
+            <i class="ri-heart-2-fill"></i>
+            <i class="ri-search-line"></i>
+            </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+ <!-- ======================================= END NG PANGALAWANG NA MENU MGA ACCESORRIES NAMAN TO ======================================= -->
+
+
+ <!-- ========================================= ARICLE SECTION ========================================= -->
+    <section style="background-color: #e6e6e6;" class="article" id="blog">
+      <div class="section__container article__container">
+        
+        <!-- ======TITLE===== -->
+        <h2 style="font-weight: 600;" class="section__header">Some of CPI Article</h2>
+
+        <!-- ============ARTICLES=========== -->
+        <div class="article__grid">
+          <div class="article__card">
+            <img src="Drone-Pictures/Article-No.1.png" alt="article" />
+            <h4>Mastering Aerial Photography</h4>
+            <p>
+              Elevate your photography skills with our comprehensive guide on
+              capturing breathtaking aerial images.
+            </p>
+            <a href="#">Read More <i class="ri-arrow-right-s-line"></i></a>
+          </div>
+
+          <!-- ===========SPACE=========== -->
+
+          <div class="article__card">
+            <img src="Drone-Pictures/Article-No.2.png" alt="article" />
+            <h4>Beyond the Horizon</h4>
+            <p>
+              Explore the critical role drones play in search and rescue
+              missions making drones invaluable tools for saving lives.
+            </p>
+            <a href="#">Read More <i class="ri-arrow-right-s-line"></i></a>
+          </div>
+
+          <!-- ===========SPACE=========== -->
+
+          <div class="article__card">
+            <img src="Drone-Pictures/Article-No.3.png" alt="article" />
+            <h4>The Future of Delivery</h4>
+            <p>
+              Uncover the exciting advancements and the potential impact in
+              delivery services as drones take to the skies.
+            </p>
+            <a href="#">Read More <i class="ri-arrow-right-s-line"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+ <!-- ========================================= END OF ARICLE SECTION ========================================= -->
+
+<!-- CENTERED TITLE AND SUBTITLE TO LAGI KADA SECTION -->
+<div style="padding-top: 120px; padding-bottom: 0;" class="centered--text">
+  <h2 class="section__header">Explore More</h2>
+</div>
+<!-- CENTERED TITLE AND SUBTITLE TO LAGI KADA SECTION -->
+
+ <!-- =================== NEW ADDED NA WALA SA UNANG WIREFRAME ITO YUNG EXPLORE MORE ================= -->
+ <section class="featured-photo">
+      
+  <div class="body">
+    <div style="gap: 25px;" class="row">
+
+        <!-- ===========Picture 1=========== -->
+        <div class="imgWrapper">
+             <a href="AddToCart.html"><img src="Drone-Pictures/Explore-More-Image-No.2.png" alt=""></a>  
+        </div>
+
+       <!-- ==========================SPACE======================= -->
+
+        <!-- ===========Picture 2=========== -->
+        <div class="imgWrapper">
+          <a href="#"><img src="Drone-Pictures/Explore-More-Image-No.1.png" alt=""></a>
+      </div>
+
+    </div>
+  </div>
+
+<div style="padding-top: 70px; padding-bottom: 0;" class="centered--text">
+  <h2 class="section__header">Be part of CPI community</h2>
+</div>
+ <!-- =================== END OF NEW ADDED NA WALA SA UNANG WIREFRAME ITO YUNG EXPLORE MORE ================= -->
+
+
+ <!-- ======================================== SUPPORT SCTIOPN ========================================= -->
+
+    <section style="padding-top: 25px;" class="section__container subscribe__container">
+      <div style="padding-top: 20px;" class="subscribe__image">
+        <!-- =====MOVIE===== -->
+        <video style="height: 400px; border-radius: 10px;" autoplay loop muted plays-inline class="bgv">
+          <source src="Drone-Pictures/Footer-Movie.webm" type="video/mp4">
+        </video>
+        <!-- =====END OF MOVIE===== -->
+      </div>
+
+      <!-- ============SUBSCRIPE/SUPPORT SECTION============ -->
+      <div class="subscribe__content">
+        <h2 style="font-size: 2rem;" class="section__header">Support</h2>
+        <p class="section__description">
+          Stay connected with the latest in drone technology and innovation by
+          subscribing to our newsletter. Be the first to receive updates on new
+          product releases, exclusive offers, and insightful articles. Join our
+          community of drone enthusiasts and industry enthusiasts to stay
+          informed about the evolving world of aerial exploration.
+        </p>
+        <p class="section__description">
+          Subscribe now to elevate your experience. Don't miss out on exciting
+          news, tips, and opportunities soar with us into the future of drone
+          technology!
+        </p>
+        <form action="/">
+          <input type="text" placeholder="Enter Your Email" />
+          <a href="TechTressure.html"><button class="btn">Subscribe</button></a>
+        </form>
+      </div>
+       <!-- ============END OF SUBSCRIPE/SUPPORT SECTION============ -->
+    </section>
+ <!-- ======================================== SUPPORT SCTIOPN ========================================= -->
+
+    
+ <!-- ======================================== FOOTER SCTIOPN ========================================= -->
+    <footer>
+      <div class="section__container footer__container">
+
+        <!-- ==========START OF UNANG ROW========== -->
+        <div class="footer__col">
+          <h4>Product Categories</h4>
+          <ul class="footer__links">
+            <li><a href="#">Consumer</a></li>
+            <li><a href="#">Professional</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Components</a></li>
+          </ul>
+        </div>
+
+        <!-- ==========START OF PANGALAWANG ROW========== -->
+        <div class="footer__col">
+          <h4>Where to Buy</h4>
+          <ul class="footer__links">
+            <li><a href="#">Official Store</a></li>
+            <li><a href="#">Best Buy</a></li>
+            <li><a href="#">B&H Photo Video</a></li>
+            <li><a href="#">Hobby Shops</a></li>
+          </ul>
+        </div>
+
+        <!-- ==========START OF PANGATLONG ROW========== -->
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Dealer Portal</a></li>
+          </ul>
+        </div>
+
+        <!-- ==========START OF PANGAPAT ROW========== -->
+        <div class="footer__col">
+          <h4>Service Plan</h4>
+          <ul class="footer__links">
+            <li><a href="#">Maintenance</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Insurance</a></li>
+            <li><a href="#">Upgrade</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ==========START END ROW========== -->
+      <div class="footer__bar">
+        <p>Copyright © 2024 Charles Designs. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-google-fill"></i></a>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+        </div>
+      </div>
+    </footer>
+   <!-- ======================================== END OF FOOTER SCTIOPN ========================================= -->
+
+   <!-- PARA SA JS LINKS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="TechTressure-Function.js"></script>
+
+  </body>
+</html>
